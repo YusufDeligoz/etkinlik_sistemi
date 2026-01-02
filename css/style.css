@@ -1,0 +1,62 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: #121212;
+    color: #eee;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigasyon Tasarımı */
+nav {
+    background: #1e1e1e;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    border-bottom: 2px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover { color: #a33333; }
+
+/* İçerik Taşıyıcı */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h2 { color: white; margin-bottom: 25px; border-left: 5px solid #a33333; padding-left: 15px; }
+
+/* Kart Tasarımı */
+.card {
+    background: #1e1e1e;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.card h3 { color: #a33333; margin-bottom: 15px; font-size: 18px; border-bottom: 1px solid #333; padding-bottom: 10px; }
+
+/* Tablo Tasarımı */
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+th { text-align: left; color: #888; font-size: 13px; padding: 10px; border-bottom: 2px solid #333; }
+td { padding: 12px 10px; border-bottom: 1px solid #2a2a2a; color: #ddd; font-size: 14px; }
+tr:hover { background: #252525; }
+
+/* Küçük Etiketler ve Detaylar */
+small { color: #666; }
+strong { color: #fff; }
