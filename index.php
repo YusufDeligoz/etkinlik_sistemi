@@ -124,7 +124,7 @@ if(isset($_POST['email']) && isset($_POST['sifre'])){
 <body>
 
 <div class="login-box">
-    <div class="login-logo">İSTÜN</div>
+    <div class="login-logo"> SocialUni </div>
     <div class="login-subtitle">Üniversite Etkinlik Yönetim Sistemi</div>
 
     <?php if(isset($hata)) echo "<div class='error-msg'>$hata</div>"; ?>
