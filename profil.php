@@ -76,7 +76,16 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <nav>
     <div class="nav-links">
-        <a href="anasayfa.php">Anasayfa</a> <a href="etkinlikler.php">Etkinlikler</a> <a href="duyurular.php">Duyurular</a> <a href="profil.php">Profilim</a> <a href="cikis.php" style="color:#ff6666;">Çıkış</a>
+        <a href="anasayfa.php">Anasayfa</a> 
+        <a href="etkinlikler.php">Etkinlikler</a> 
+        <a href="duyurular.php">Duyurular</a> 
+        <a href="profil.php">Profilim</a> 
+        
+        <?php if(isset($_SESSION['kullanici']) && $_SESSION['kullanici']['rol_id'] == 1): ?>
+            <a href="istatistik.php" style="color:#f1c40f; font-weight:bold;">İstatistikler</a>
+        <?php endif; ?>
+        
+        <a href="cikis.php" style="color:#ff6666;">Çıkış</a>
     </div>
     <div class="logo">SocialUni</div>
 </nav>
